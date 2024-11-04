@@ -34,24 +34,15 @@ class _TaskListTabState extends State<TaskListTab> {
               //height: MediaQuery.of(context).size.height * 0.13,
               height: MediaQuery.of(context).size.height * 0.20,
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Color(0xff5D9CEC),
-                    provider.appTheme == ThemeMode.light
-                        ?Color(0xffebeeeb)
-                        :Color(0xff060E1E),
-                  ],
-                ),
+                color: provider.appTheme == ThemeMode.light
+                    ? Color(0xffebeeeb)
+                    : Color(0xff060E1E),
               ),
               child: Column(
                 children: [
                   EasyDateTimeLine(
                     initialDate: listProvider.selectDate,
-                    //DateTime.now(),
                     onDateChange: (selectedDate) {
-                      ///`selectedDate` the new date selected.
                       listProvider.changeSelectDate(selectedDate, authProvider.currentUser!.id!);
                     },
                     locale: provider.appLanguage,
@@ -64,16 +55,7 @@ class _TaskListTabState extends State<TaskListTab> {
                       activeDayStyle: DayStyle(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(8)),
-                          color: AppColors.primaryColor
-                          // gradient: LinearGradient(
-                          //   begin: Alignment.topCenter,
-                          //   end: Alignment.bottomCenter,
-                          //   colors: [
-                          //     Color(0xff3371FF),
-                          //     Color(0xff83a7e5),
-                          //     //Color(0xff8426D6),
-                          //   ],
-                          // ),
+                          color: AppColors.primaryColor,
                         ),
                       ),
                     ),
@@ -81,6 +63,7 @@ class _TaskListTabState extends State<TaskListTab> {
                 ],
               ),
             ),
+
 
             SizedBox(height: MediaQuery.of(context).size.height*0.05,),
             Expanded(

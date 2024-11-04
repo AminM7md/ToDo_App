@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
         iconTheme: IconThemeData(
           color: AppColors.whiteColor
         ),
-        toolbarHeight: MediaQuery.of(context).size.height*0.1,
+        toolbarHeight: MediaQuery.of(context).size.height*0.18,
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
