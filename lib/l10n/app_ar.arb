@@ -1,0 +1,20 @@
+{
+  "app_title": "قائمة المهام",
+  "task_list": "قائمة المهام",
+  "add_new_task": "أضف مهمة جديدة",
+  "task_title": "أدخل عنوان المهمة",
+  "task_details": "أدخل تفاصيل المهمة",
+  "task_title_warning": "الرجاء إدخال عنوان المهمة",
+  "task_details_warning": "الرجاء إدخال تفاصيل المهمة",
+  "select_date": "حدد التاريخ",
+  "settings": "الإعدادات",
+  "language": "اللغة",
+  "arabic": "العربية",
+  "english": "الإنجليزية",
+  "theme": "النمط",
+  "light": "مضيء",
+  "dark": "مظلم",
+  "systemDefault": "النظام الافتراضي",
+  "save_changes": "حفظ التغيرات",
+  "edit_task": "تعديل المهمة"
+}
